@@ -1,0 +1,12 @@
+/* This stylesheet is used to style the public view of the widget. */
+
+.jw_event_band_name {
+	display: block;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+.jw_widget_event_time {
+	display: inline-block;
+	margin-top: 4px;
+}
