@@ -36,6 +36,10 @@ This plugin relies on your server having the correct time set. If it's off, or t
 
 Sorry! I really want to get to this very soon, but haven't had time yet.
 
+= How do I change the "Live in: " text? =
+
+Once again, apologies - you can't currently do so. You could edit the widget.js and the widget.php files for the time being.
+
 == Screenshots ==
 
 1. Here's the widget on the default TwentyTwelve theme.
@@ -43,6 +47,9 @@ Sorry! I really want to get to this very soon, but haven't had time yet.
 3. This is the admin screen.
 
 == Changelog ==
+
+= 0.1.1 =
+* Fixed a counting bug and removed some erroneous console.log calls.
 
 = 0.1 =
 * First version
