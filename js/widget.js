@@ -37,12 +37,19 @@
 				)
 			);
 
+		console.log(jw_days);
+		console.log(jw_hours);
+		console.log(jw_minutes);
+		console.log(jw_seconds);
+
 		// Get all the seconds
 		jw_daysSeconds = jw_days * 24 * 60 * 60;
 		jw_hoursSeconds = jw_hours * 60 * 60;
 		jw_minutesSeconds = jw_minutes * 60;
 
 		jw_totalSeconds = jw_seconds+jw_minutesSeconds+jw_hoursSeconds+jw_daysSeconds;
+
+		console.log(jw_totalSeconds);
 
 		/**
 		 * Check if passed number exists. If not, return a 0
@@ -65,7 +72,7 @@
 		function convertSecondsToDays(sec) {
 		  var allTime,days,hours,rem,mins,secs;
 		  days =  parseInt(sec/(24*3600));
-		  rem = sec - days*3600
+		  rem = sec - days*3600*24;
 		  hours = parseInt(rem/3600);
 		  rem = rem - hours*3600;
 		  mins = parseInt(rem/60);
@@ -97,7 +104,8 @@
 			var allTime, outputText, trimmedOutputText;
 
 			allTime = convertSecondsToDays(jw_totalSeconds);
-
+			console.log(jw_totalSeconds);
+			console.log(allTime);
 			if (jw_timeToUse) {
 
 		  		outputText = jw_is_plural(allTime[0], ' days')+' '+jw_is_plural(allTime[1], ' hrs')+' '+jw_is_plural(allTime[2], ' mins')+' '+jw_is_plural(allTime[3], ' secs');
